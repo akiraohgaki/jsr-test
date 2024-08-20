@@ -4,7 +4,6 @@
  * @example
  * ```ts
  * const counter = new HexCounter('ff');
- *
  * counter.increment();
  * counter.decrement();
  * console.log(counter.value);
