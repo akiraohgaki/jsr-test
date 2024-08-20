@@ -1,6 +1,6 @@
 {
   "name": "@akiraohgaki/jsr-test",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "exports": "./mod.ts",
   "compilerOptions": {
     "lib": [
@@ -56,10 +56,10 @@
   },
   "publish": {
     "include": [
-      "LICENSE",
+      "src/**/*.ts",
+      "mod.ts",
       "README.md",
-      "src/",
-      "*.ts"
+      "LICENSE"
     ]
   },
   "tasks": {
