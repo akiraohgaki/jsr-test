@@ -7,15 +7,15 @@ export default class HexCounter {
   /**
    * Creates a new HexCounter instance.
    *
-   * @example
-   * ```
-   * const counter = new HexCounter('ff');
-   * ```
-   *
    * @param value - The initial value of the counter in hexadecimal
    *
    * @remarks
    * If no value is provided, the counter will start at 0.
+   *
+   * @example
+   * ```ts
+   * const counter = new HexCounter('ff');
+   * ```
    */
   constructor(value?: string) {
     if (value) {
@@ -27,7 +27,7 @@ export default class HexCounter {
    * The current value of the counter in hexadecimal.
    *
    * @example
-   * ```
+   * ```ts
    * const counter = new HexCounter('ff');
    * console.log(counter.value); // 'ff'
    * ```
@@ -40,7 +40,7 @@ export default class HexCounter {
    * Increments the counter by 1 in hexadecimal.
    *
    * @example
-   * ```
+   * ```ts
    * const counter = new HexCounter('ff');
    * counter.increment();
    * console.log(counter.value); // '100'
@@ -54,7 +54,7 @@ export default class HexCounter {
    * Decrements the counter by 1 in hexadecimal.
    *
    * @example
-   * ```
+   * ```ts
    * const counter = new HexCounter('ff');
    * counter.decrement();
    * console.log(counter.value); // 'fe'
