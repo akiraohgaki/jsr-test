@@ -54,6 +54,14 @@
       "tests/unit/"
     ]
   },
+  "publish": {
+    "include": [
+      "LICENSE",
+      "README.md",
+      "src/",
+      "*.ts"
+    ]
+  },
   "tasks": {
     "build": "deno task build:setup && deno task build:bundle && deno task build:teardown",
     "build:setup": "curl -fsSL https://raw.githubusercontent.com/akiraohgaki/helper-script/main/remkdir.sh | sh -s -- public 'src/*.html src/*.ico src/*.png src/assets'",
