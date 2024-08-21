@@ -1,5 +1,5 @@
 /**
- * Count in hexadecimal
+ * HexCounter
  *
  * @example
  * ```ts
@@ -8,22 +8,28 @@
  * counter.decrement();
  * console.log(counter.value);
  * ```
+ *
+ * @module
+ */
+
+/**
+ * A class to count in hexadecimal.
  */
 export default class HexCounter {
   #value = 0;
 
   /**
-   * Creates a new HexCounter instance.
-   *
-   * @param value - The initial value of the counter in hexadecimal
-   *
-   * @remarks
-   * If no value is provided, the counter will start at 0.
+   * Creates a new instance of the HexCounter class.
    *
    * @example
    * ```ts
    * const counter = new HexCounter('ff');
    * ```
+   *
+   * @param value - The initial value of the counter in hexadecimal
+   *
+   * @remarks
+   * If no value is provided, the counter will start at 0.
    */
   constructor(value?: string) {
     if (value) {

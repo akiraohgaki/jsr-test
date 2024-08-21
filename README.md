@@ -1,8 +1,14 @@
 # jsr-test
 
-Test package for JSR
+A test package publishing to JSR.
 
-## Examples
+## Install
+
+```sh
+deno add @akiraohgaki/jsr-test
+```
+
+## Usage
 
 ```ts
 import { HexCounter } from '@akiraohgaki/jsr-test';
