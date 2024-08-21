@@ -1,5 +1,5 @@
 /**
- * HexCounter
+ * A class to count in hexadecimal.
  *
  * @example
  * ```ts
@@ -8,12 +8,6 @@
  * counter.decrement();
  * console.log(counter.value);
  * ```
- *
- * @module
- */
-
-/**
- * A class to count in hexadecimal.
  */
 export default class HexCounter {
   #value = 0;
