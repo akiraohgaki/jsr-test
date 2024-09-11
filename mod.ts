@@ -1,7 +1,6 @@
 /**
  * @module @akiraohgaki/jsr-test
  *
- * @example
  * ```ts
  * import { HexCounter } from '@akiraohgaki/jsr-test';
  * ```
