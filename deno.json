@@ -9,6 +9,7 @@
     "include": [
       "src/**/*.ts",
       "mod.ts",
+      "hex-counter.ts",
       "README.md",
       "LICENSE"
     ]
