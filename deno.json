@@ -1,7 +1,17 @@
 {
   "name": "@akiraohgaki/jsr-test",
-  "version": "0.0.8",
-  "exports": "./mod.ts",
+  "version": "0.0.9",
+  "exports": {
+    ".": "./mod.ts"
+  },
+  "publish": {
+    "include": [
+      "src/**/*.ts",
+      "mod.ts",
+      "README.md",
+      "LICENSE"
+    ]
+  },
   "compilerOptions": {
     "lib": [
       "deno.ns",
@@ -54,25 +64,8 @@
       "tests/unit/"
     ]
   },
-  "publish": {
-    "include": [
-      "src/**/*.ts",
-      "mod.ts",
-      "README.md",
-      "LICENSE"
-    ]
-  },
   "tasks": {
-    "build": "deno task build:setup && deno task build:bundle && deno task build:teardown",
-    "build:setup": "curl -fsSL https://raw.githubusercontent.com/akiraohgaki/helper-script/main/remkdir.sh | sh -s -- public 'src/*.html src/*.ico src/*.png src/assets'",
-    "build:bundle": "deno run --allow-env --allow-read --allow-write --allow-net https://raw.githubusercontent.com/akiraohgaki/helper-script/main/deno-bundle.ts src/main.ts public/main.bundle.js",
-    "build:teardown": "echo 'Skip task build:teardown'",
-    "test": "deno task test:setup && deno task test:unit && deno task test:e2e && deno task test:teardown",
-    "test:setup": "echo 'Skip task test:setup'",
-    "test:unit": "deno test tests/unit/",
-    "test:e2e": "echo 'Skip task test:e2e'",
-    "test:teardown": "echo 'Skip task test:teardown'",
-    "serve": "deno run --allow-sys --allow-read --allow-net jsr:@std/http/file-server public -p 3000"
+    "test": "deno test tests/unit/"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert"
