@@ -1,7 +1,7 @@
 /**
  * A class to count in hexadecimal.
  *
- * @example
+ * @example Basic usage
  * ```ts
  * const counter = new HexCounter('ff');
  * counter.increment();

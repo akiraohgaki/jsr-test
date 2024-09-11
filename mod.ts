@@ -1,9 +1,11 @@
 /**
- * @module @akiraohgaki/jsr-test
+ * Module @akiraohgaki/jsr-test
  *
  * ```ts
- * import { HexCounter } from '@akiraohgaki/jsr-test';
+ * import * as JsrTest from '@akiraohgaki/jsr-test';
  * ```
+ *
+ * @module
  */
 
 export { default as HexCounter } from './src/HexCounter.ts';
