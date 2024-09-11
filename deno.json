@@ -1,8 +1,9 @@
 {
   "name": "@akiraohgaki/jsr-test",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "exports": {
-    ".": "./mod.ts"
+    ".": "./mod.ts",
+    "./hex-counter": "./hex-counter.ts"
   },
   "publish": {
     "include": [
