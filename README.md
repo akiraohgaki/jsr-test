@@ -1,14 +1,18 @@
 # jsr-test
 
+[![JSR](https://jsr.io/badges/@akiraohgaki/jsr-test)](https://jsr.io/@akiraohgaki/jsr-test)
+
 A test package publishing to JSR.
 
-## Install
+## Usage
+
+### Install
 
 ```sh
 deno add @akiraohgaki/jsr-test
 ```
 
-## Usage
+### Examples
 
 ```ts
 import { HexCounter } from '@akiraohgaki/jsr-test';
