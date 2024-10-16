@@ -9,7 +9,7 @@ A test package publishing to JSR.
 ### Install
 
 ```sh
-deno add @akiraohgaki/jsr-test
+deno add jsr:@akiraohgaki/jsr-test
 ```
 
 ### Examples
