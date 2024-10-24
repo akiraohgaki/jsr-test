@@ -52,6 +52,7 @@
       "src/",
       "tests/",
       "*.ts",
+      "*.json",
       "*.md"
     ],
     "useTabs": false,
@@ -67,7 +68,7 @@
     ]
   },
   "tasks": {
-    "test": "deno test tests/unit/"
+    "test": "deno test -A tests/unit/"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert"
