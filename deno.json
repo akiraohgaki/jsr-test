@@ -68,9 +68,9 @@
     ]
   },
   "tasks": {
-    "test": "deno test -A tests/unit/"
+    "test": "deno test -A"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert"
+    "@std/assert": "jsr:@std/assert@^1.0.10"
   }
 }
