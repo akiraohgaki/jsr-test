@@ -1,4 +1,4 @@
-const filePath = new URL('./src/test.txt', import.meta.url).pathname;
+const filePath = new URL(import.meta.resolve('./src/test.txt')).pathname;
 
 console.log(filePath);
 
