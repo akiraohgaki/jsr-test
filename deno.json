@@ -1,15 +1,18 @@
 {
   "name": "@akiraohgaki/jsr-test",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "exports": {
     ".": "./mod.ts",
-    "./hex-counter": "./hex-counter.ts"
+    "./hex-counter": "./hex-counter.ts",
+    "./test": "./test.ts"
   },
   "publish": {
     "include": [
       "src/**/*.ts",
+      "src/**/*.txt",
       "mod.ts",
       "hex-counter.ts",
+      "deno.json",
       "README.md",
       "LICENSE"
     ]
