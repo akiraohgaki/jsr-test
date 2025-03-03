@@ -12,6 +12,7 @@
       "src/**/*.txt",
       "mod.ts",
       "hex-counter.ts",
+      "test.ts",
       "deno.json",
       "README.md",
       "LICENSE"
